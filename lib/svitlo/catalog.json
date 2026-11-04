@@ -1,0 +1,425 @@
+{
+  "regions": [
+    {
+      "id": "vinnytsia",
+      "name": "Вінницька область",
+      "operators": [
+        {
+          "id": "vinnytsia",
+          "name": "Вінницяобленерго",
+          "url": "https://www.voe.com.ua/disconnection/detailed",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "volyn",
+      "name": "Волинська область",
+      "operators": [
+        {
+          "id": "volyn",
+          "name": "Волиньобленерго",
+          "url": "https://energy.volyn.ua/spozhyvacham/perervy-u-elektropostachanni/hrafik-vidkliuchen/",
+          "adapter": "unsupported",
+          "limitation": "Графік вбудований з окремого сервісу; доступ до нього повертає HTTP 403.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "dnipro",
+      "name": "Дніпропетровська область",
+      "operators": [
+        {
+          "id": "dtek-dnipro",
+          "name": "ДТЕК Дніпровські електромережі",
+          "url": "https://www.dtek-dnem.com.ua/ua/shutdowns",
+          "adapter": "dtek",
+          "limitation": "Добові графіки з офіційної сторінки ДТЕК. Оберіть вашу підчергу. Аварійні відключення за адресою можуть відрізнятися від графіка.",
+          "queues": [
+            "1.1",
+            "1.2",
+            "2.1",
+            "2.2",
+            "3.1",
+            "3.2",
+            "4.1",
+            "4.2",
+            "5.1",
+            "5.2",
+            "6.1",
+            "6.2"
+          ]
+        },
+        {
+          "id": "cek",
+          "name": "ПЕЕМ «ЦЕК»",
+          "url": "https://cek.dp.ua/index.php/cpojivaham/vidkliuchennia.html",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "donetsk",
+      "name": "Донецька область",
+      "operators": [
+        {
+          "id": "dtek-donetsk",
+          "name": "ДТЕК Донецькі електромережі",
+          "url": "https://www.dtek-dem.com.ua/ua/shutdowns",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        },
+        {
+          "id": "dtek-pem",
+          "name": "ДТЕК ПЕМ-Енерговугілля",
+          "url": "https://www.dtek-pem.com.ua/ua/shutdowns-schedule",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        },
+        {
+          "id": "dtek-vvm",
+          "name": "ДТЕК Високовольтні мережі",
+          "url": "https://www.dtek-vvm.com.ua/ua/shutdowns-schedule",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "zhytomyr",
+      "name": "Житомирська область",
+      "operators": [
+        {
+          "id": "zhytomyr",
+          "name": "Житомиробленерго",
+          "url": "https://www.ztoe.com.ua/unhooking-search.php",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "zakarpattia",
+      "name": "Закарпатська область",
+      "operators": [
+        {
+          "id": "zakarpattia",
+          "name": "Закарпаттяобленерго",
+          "url": "https://zakarpat.energy/customers/break-in-electricity-supply/schedule/",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "zaporizhzhia",
+      "name": "Запорізька область",
+      "operators": [
+        {
+          "id": "zaporizhzhia",
+          "name": "Запоріжжяобленерго",
+          "url": "https://www.zoe.com.ua/",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "ivano-frankivsk",
+      "name": "Івано-Франківська область",
+      "operators": [
+        {
+          "id": "prykarpattya",
+          "name": "Прикарпаттяобленерго",
+          "url": "https://svitlo.oe.if.ua/",
+          "adapter": "prykarpattya",
+          "limitation": "Публічний API. Відсутність опублікованого дня не означає відсутність відключень. Аварійні відключення за адресою не охоплені.",
+          "queues": [
+            "1.1",
+            "1.2",
+            "2.1",
+            "2.2",
+            "3.1",
+            "3.2",
+            "4.1",
+            "4.2",
+            "5.1",
+            "5.2",
+            "6.1",
+            "6.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kyiv-city",
+      "name": "м. Київ",
+      "operators": [
+        {
+          "id": "dtek-kyiv-city",
+          "name": "ДТЕК Київські електромережі",
+          "url": "https://www.dtek-kem.com.ua/ua/shutdowns",
+          "adapter": "unsupported",
+          "limitation": "Оператор публікує індивідуальні графіки за адресою. Вибір черги не дає достовірного графіка.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "kyiv",
+      "name": "Київська область",
+      "operators": [
+        {
+          "id": "dtek-kyiv",
+          "name": "ДТЕК Київські регіональні електромережі",
+          "url": "https://www.dtek-krem.com.ua/ua/shutdowns",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "kirovohrad",
+      "name": "Кіровоградська область",
+      "operators": [
+        {
+          "id": "kirovohrad",
+          "name": "Кіровоградобленерго",
+          "url": "https://kiroe.com.ua/electricity-blackout",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "luhansk",
+      "name": "Луганська область",
+      "operators": [
+        {
+          "id": "luhansk",
+          "name": "Луганське енергетичне об'єднання",
+          "url": "https://www.energy.lg.ua/",
+          "adapter": "unsupported",
+          "limitation": "У наведеному переліку Держенергонагляду немає добового джерела для регіону. Автоматичне покриття відсутнє.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "lviv",
+      "name": "Львівська область",
+      "operators": [
+        {
+          "id": "lviv",
+          "name": "Львівобленерго",
+          "url": "https://poweron.loe.lviv.ua/",
+          "adapter": "unsupported",
+          "limitation": "Офіційна сторінка перенаправляє на poweron; автоматичний доступ у цьому середовищі повертає HTTP 403.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "mykolaiv",
+      "name": "Миколаївська область",
+      "operators": [
+        {
+          "id": "mykolaiv",
+          "name": "Миколаївобленерго",
+          "url": "https://off.energy.mk.ua/",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        },
+        {
+          "id": "atomservice",
+          "name": "ДПЕМ ПрАТ «Атомсервіс»",
+          "url": "https://info.dpem.mk.ua/off_graf.html",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "odesa",
+      "name": "Одеська область",
+      "operators": [
+        {
+          "id": "dtek-odesa",
+          "name": "ДТЕК Одеські електромережі",
+          "url": "https://www.dtek-oem.com.ua/ua/shutdowns",
+          "adapter": "dtek",
+          "limitation": "Добові графіки з офіційної сторінки ДТЕК. Оберіть вашу підчергу. Аварійні відключення за адресою можуть відрізнятися від графіка.",
+          "queues": [
+            "1.1",
+            "1.2",
+            "2.1",
+            "2.2",
+            "3.1",
+            "3.2",
+            "4.1",
+            "4.2",
+            "5.1",
+            "5.2",
+            "6.1",
+            "6.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poltava",
+      "name": "Полтавська область",
+      "operators": [
+        {
+          "id": "poltava",
+          "name": "Полтаваобленерго",
+          "url": "https://www.poe.pl.ua/disconnection/hrafik-pohodynnoho-vidkliuchennia-elektroenerhii/",
+          "adapter": "poltava",
+          "limitation": "Доступний сезонний PDF. Він не є підтвердженим добовим графіком; інтервали не формуються.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "rivne",
+      "name": "Рівненська область",
+      "operators": [
+        {
+          "id": "rivne",
+          "name": "Рівнеобленерго",
+          "url": "https://www.roe.vsei.ua/disconnections",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "sumy",
+      "name": "Сумська область",
+      "operators": [
+        {
+          "id": "sumy",
+          "name": "Сумиобленерго",
+          "url": "https://www.soe.com.ua/spozhivacham/vidklyuchennya",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "ternopil",
+      "name": "Тернопільська область",
+      "operators": [
+        {
+          "id": "ternopil",
+          "name": "Тернопільобленерго",
+          "url": "https://www.toe.com.ua/",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "kharkiv",
+      "name": "Харківська область",
+      "operators": [
+        {
+          "id": "kharkiv",
+          "name": "Харківобленерго",
+          "url": "https://www.oblenergo.kharkov.ua/getinfoingao",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "kherson",
+      "name": "Херсонська область",
+      "operators": [
+        {
+          "id": "kherson",
+          "name": "Херсонобленерго",
+          "url": "https://ksoe.com.ua/",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "khmelnytskyi",
+      "name": "Хмельницька область",
+      "operators": [
+        {
+          "id": "khmelnytskyi",
+          "name": "Хмельницькобленерго",
+          "url": "https://hoe.com.ua/page/informatsija-vidkljuchennja",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "cherkasy",
+      "name": "Черкаська область",
+      "operators": [
+        {
+          "id": "cherkasy",
+          "name": "Черкасиобленерго",
+          "url": "https://www.cherkasyoblenergo.com/off",
+          "adapter": "unsupported",
+          "limitation": "Пошук потребує адреси, рахунку або філії. Добовий адаптер за чергою не підключено.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "chernivtsi",
+      "name": "Чернівецька область",
+      "operators": [
+        {
+          "id": "chernivtsi",
+          "name": "Чернівціобленерго",
+          "url": "https://oblenergo.cv.ua/shutdowns/",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    },
+    {
+      "id": "chernihiv",
+      "name": "Чернігівська область",
+      "operators": [
+        {
+          "id": "chernihiv",
+          "name": "Чернігівобленерго",
+          "url": "https://chernihivoblenergo.com.ua/blackouts",
+          "adapter": "unsupported",
+          "limitation": "Автоматичне отримання добових графіків не підключено. Перевірте офіційний сайт.",
+          "queues": []
+        }
+      ]
+    }
+  ]
+}
